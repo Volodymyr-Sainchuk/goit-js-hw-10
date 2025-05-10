@@ -29,7 +29,7 @@ const options = {
         title: 'Error',
         message: 'Please choose a date in the future',
         position: 'topRight',
-        color: 'red',
+        color: 'green',
       });
       btn.disabled = true;
     } else {
@@ -62,7 +62,7 @@ btn.addEventListener('click', () => {
         title: 'Done',
         message: 'Countdown finished! Select a new date.',
         position: 'topRight',
-        color: 'green',
+        color: 'red',
       });
 
       return;
