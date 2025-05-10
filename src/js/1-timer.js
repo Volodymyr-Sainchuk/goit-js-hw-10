@@ -25,10 +25,11 @@ const options = {
     const now = Date.now();
 
     if (userSelectedDate <= now) {
-      iziToast.error({
+      iziToast.show({
         title: 'Error',
         message: 'Please choose a date in the future',
         position: 'topRight',
+        color: 'green',
       });
       btn.disabled = true;
     } else {
@@ -57,10 +58,11 @@ btn.addEventListener('click', () => {
       btn.disabled = true;
       userSelectedDate = null;
 
-      iziToast.success({
+      iziToast.show({
         title: 'Done',
         message: 'Countdown finished! Select a new date.',
         position: 'topRight',
+        color: 'red',
       });
 
       return;
